@@ -32,9 +32,55 @@
            color: white;
         }
 
-        h1 { 
-            margin-top: 70px;
+        img {
+            
+            width: 300px;
+            height: 100px;
+            margin-top: 30px;
+            
         }
+
+        h1 { 
+            margin-top: -20px;
+        }
+
+        form {
+            background: rgba(136, 158, 136, 0.397);
+            border: 4px solid rgba(136, 158, 136, 0.397);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 70px;
+            width: 40%;
+            box-sizing: border-box;
+            
+        }
+
+        h2 {
+
+            margin-top: 0px;
+
+        }
+
+        label, input, textarea {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        #image {
+
+            margin-top: 20px;
+            width: 140px;
+            height: 50px;
+            box-sizing: content-box;
+        }
+
+        #div1 {
+
+            text-align: center;
+
+        }
+
     </style>
 
 </head>
@@ -54,7 +100,43 @@
         </li>
     </ul>
 
-    <h1>Pridať recenziu</h1>
+    <div id="div1">
+    <img src="stars.png" alt="stars">
+
+    <h1>RECENZIA</h1>
+    </div>
+
+    <form>
+
+        <h2>RECENZIA</h2>
+
+        <label for="nameofmovie">Názov filmu: </label>
+        <input placeholder="Názov filmu: " type="text" id="nameofmovie" name="nameofmovie" required>
+        <label for="nickname">Nickname: </label>
+        <input placeholder="Nickname: " type="text" name="nickname" id="nickname" required>
+        <label for="email">Email: </label>
+        <input placeholder="Email: " type="email" name="email" id="email" required>
+        
+        <label for="textarea">Názor na film: </label>
+        <textarea placeholder="Text: " name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+        <label for="date">Naposledy pozeraný: </label>
+        <input type="date" name="date" id="date"><br>
+        <label for="range">Hodnotenie (0-100): </label>
+        <input type="range" name="range" id="range" step="10" min="0" max="100">
+
+        <label for="select">Žáner: </label>
+        <select name="select" id="select">
+            <option value="Thriller">Thriller</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Action">Action</option>
+        </select>
+
+        <input type="image" src="send.png" alt="Submit" width="140" height="50" id="image">
+
+    </form>
 
 </body>
 </html>
