@@ -10,32 +10,88 @@
 
 body {
             margin: 50px 50px;
-            background-color: #E8DDBA;
+            margin-top: 20px;
+            
+            background-image: url("star.jpg");
             font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+            color: white;
         }
 
-        ul {
-           padding-left: 0px;
+        #navbar1 {
+            background-color: #141414;
+            background-color: #9b4242;
+            border-radius: 13px;
+            padding: 15px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: baseline;
+            
         }
 
-        li {
-            display: inline;
+        #navbar1 > div {
+            padding: 20px 15px;
+            margin: 10px;
+            border: 4px solid rgba(136, 158, 136, 0.397);
+            border-radius: 8px;
+            
+            font-size: 24px;
+            color: white;
+            opacity: 0.9;
         }
 
         a {
-           
-           padding: 7px 10px;
            font-size: 24px;
            text-decoration: none;
-           border: 4px solid rgba(136, 158, 136, 0.397);
-           border-radius: 8px;
-           background-color: rgba(136, 158, 136, 0.397);
            color: white;
         }
+
+        #navbar1 div:hover {
+            background-color: rgba(136, 158, 136, 0.397);
+        }
+
+        #navbar1 > div:nth-child(1) {
+            margin-left: 0px;
+        }
+
+
+
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltiptext > img {
+            margin: 20px 10px 0px 10px;
+            width: 130px;
+            height: 100px;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 150px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+
 
         table, th, td {
             border: 1px solid black;
             border-collapse: collapse;
+            color: black;
         }
 
         table {
@@ -141,19 +197,25 @@ body {
 </head>
 <body>
 
-    <ul style="list-style-type: none;">
-        <li>
-            <a href="/index.html" target="_self">Domov</a>
-        </li>
+    <nav>
+        <div id="navbar1">
+            <div>
+                <a href="/index.html" target="_self">DOMOV</a>
+            </div>
 
-        <li>
-            <a href="/1rebricek/rebricek.html" target="_self">Rebríček najlepších filmov</a>
-        </li>
+            <div>
+                <a href="/1rebricek/rebricek.html" target="_self">REBRÍČEK NAJLEPŠÍCH FILMOV</a>
+            </div>
 
-        <li>
-            <a href="/2recenzia/recenzia.html" target="_self">Pridať recenziu</a>
-        </li>
-    </ul>
+            <div>
+                <a href="/2recenzia/recenzia.html" target="_self">PRIDAŤ RECENZIU</a>
+            </div>
+
+            <div>
+                <a href="/2recenzia/recenzia.html" target="_self">DETAIL FILMU</a>
+            </div>
+        </div>
+    </nav>
 
 
     <audio src="Jungle Boy.mp3" autoplay></audio>
@@ -167,32 +229,45 @@ body {
             <th>Hodnotenie v percentách</th>
         </tr>
         <tr class="farbariadka1">
+
+            
+
             <td class="poradie">1.</td>
-            <td>Vykoupení z věznice Shawshank</td>
+            <td class="tooltip">Vykoupení z věznice Shawshank 
+                <span class="tooltiptext">Andy Dufersen<img src="andy.gif" width="60px" height="60px"></span>
+            </td>
             <td>1994</td>
             <td class="farba">95,3 &#37</td>
         </tr>
         <tr class="farbariadka2">
             <td class="poradie">2.</td>
-            <td>Forrest Gump</td>
+            <td class="tooltip">Forrest Gump
+                <span class="tooltiptext">Forest Gump<img src="andy.gif" width="60px" height="60px"></span>
+            </td>
             <td>1994</td>
             <td class="farba">94,5 &#37</td>
         </tr>
         <tr class="farbariadka1">
             <td class="poradie">3.</td>
-            <td>Zelená míle</td>
+            <td class="tooltip">Zelená míle 
+                <span class="tooltiptext">Forest Gump<img src="andy.gif" width="60px" height="60px"></span>
+            </td>
             <td>1999</td>
             <td class="farba">92,9 &#37</td>
         </tr>
         <tr class="farbariadka2">
             <td class="poradie">4.</td>
-            <td>Přelet nad kukaččím hnízdem</td>
+            <td class="tooltip">Přelet nad kukaččím hnízdem 
+                <span class="tooltiptext">Forest Gump<img src="andy.gif" width="60px" height="60px"></span>
+            </td>
             <td>1975</td>
             <td class="farba">92,5 &#37</td>
         </tr>
         <tr class="farbariadka1">
             <td class="poradie">5.</td>
-            <td>Sedm</td>
+            <td class="tooltip">Sedm
+                <span class="tooltiptext">Forest Gump<img src="andy.gif" width="60px" height="60px"></span>
+            </td>
             <td>1995</td>
             <td class="farba">92,4 &#37</td>
         </tr>
