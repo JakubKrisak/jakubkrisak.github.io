@@ -60,7 +60,7 @@
        #menu2 {
            
             margin: auto;
-            margin-top: 50px;
+            margin-top: 100px;
             height: 480px;
 
             border: 4px solid rgba(136, 158, 136, 0.397);
@@ -92,7 +92,12 @@
             margin: auto;
             margin-top: 25px;
             max-width: 450px;
+       }
 
+       #menu2 > p::first-letter {
+           font-size: 32px;
+           color: red;
+           font-weight: 900;
        }
 
        #menu2 a {
@@ -104,9 +109,6 @@
 
             display: block;
             text-transform: uppercase;
-            
-            
-
        }
 
        #menu2 a:hover {
@@ -137,6 +139,15 @@
 
        }
 
+       #pumpingiron > p i:first-child {
+            color: yellowgreen;
+       }
+
+       #pumpingiron > p::first-letter {
+           font-size: 36px;
+           color: orange;
+       }
+
        svg {
             margin-right: 120px;
             float: right;
@@ -151,7 +162,15 @@
             border: 4px solid rgba(136, 158, 136, 0.397);
             border-radius: 8px;
             background-color: rgba(136, 158, 136, 0.397);
+       }
 
+       #lord > p strong:first-child {
+           color: goldenrod;
+       }
+
+       #lord > p::first-letter {
+           font-size: 32px;
+           color: yellow;
        }
        
        #fightclub {
@@ -163,9 +182,17 @@
             border: 4px solid rgba(136, 158, 136, 0.397);
             border-radius: 8px;
             background-color: rgba(136, 158, 136, 0.397);
-
         }
 
+        #fightclub > p i:nth-child(1) {
+            font-size: 24px;
+            color: pink;
+        }
+
+        #fightclub > p::first-letter {
+            font-size: 32px;
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -213,7 +240,7 @@
 
         <div id="pumpingiron">
 
-            <p>Pumping Iron - Dokument o Arnold Schwarzenegger, len kvôli tomuto človeku je to podľa mňa najlepší dokumentárny film. </p>
+            <p><i>Pumping Iron</i> - Dokument o Arnold Schwarzenegger, len kvôli tomuto človeku je to podľa mňa najlepší dokumentárny film. </p>
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/-xZQ0YZ7ls4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -294,7 +321,6 @@
                 style="fill:yellow;stroke-width:4;stroke:rgb(0,0,0)" />
 
                 
-            
             </svg>
         
         </div>
@@ -302,7 +328,7 @@
 
         <div id="lord">
 
-            <p>The lord of the rings - Nemám srdce to rozdeľovať na časti, fantasy a dobrodružstvo, proste top.<p>
+            <p><strong>The lord of the rings</strong> - Nemám srdce to rozdeľovať na časti, fantasy a dobrodružstvo, proste top.<p>
 
                     <figure id="lorddd">
                         <img src="lord1.jpg" alt="Trulli" style="width: 200px;">
@@ -323,7 +349,7 @@
 
         <div id="fightclub">
 
-            <p>The fight club - Mindfuck, je rozhodujúci fakt o obľúbenosti.</p>
+            <p><i>The fight club</i> - Mindfuck, je rozhodujúci fakt o obľúbenosti.</p>
 
                 <figure>
                     <img src="thefightclub.jpg" alt="The fight club" style="width:25%">
